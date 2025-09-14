@@ -1,4 +1,4 @@
-.hero, .autorization {
+.partner, .hero, .autorization {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,6 +105,21 @@ body {
   gap: 112px;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .header__container {
+    position: absolute;
+    top: 35px;
+    width: 670px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1140px) {
+  .header__container {
+    width: 940px;
+  }
+}
 
 .autorization {
   gap: 5px;
@@ -144,12 +159,24 @@ body {
   text-align: center;
   padding-bottom: 12px;
 }
+@media (min-width: 768px) {
+  .hero__title {
+    padding-bottom: 36px;
+    font-size: 52px;
+  }
+}
 .hero__text {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding-bottom: 19px;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 24px;
+    padding-bottom: 33px;
+  }
 }
 
 .button {
@@ -162,6 +189,12 @@ body {
   width: 280px;
   border: 2px solid #FF4E50;
 }
+@media (min-width: 768px) {
+  .button {
+    padding: 11px 19px;
+    width: auto;
+  }
+}
 .button:hover {
   background-color: transparent;
   color: #FF4E50;
@@ -173,18 +206,72 @@ body {
   color: #FF4E50;
   border: 2px solid #FF4E50;
 }
+@media (min-width: 768px) {
+  .button--partner {
+    padding-inline: 27.231px;
+  }
+}
 .button--partner:hover {
   background-color: #FF4E50;
   color: #FFFFFF;
 }
 
+.partners {
+  padding-top: 60px;
+  padding-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .partners {
+    padding-top: 66px;
+    padding-bottom: 39px;
+  }
+}
 .partners__title {
   font-size: 22px;
   color: #333333;
   text-align: center;
-  padding-top: 60px;
+  padding-bottom: 14px;
+}
+@media (min-width: 768px) {
+  .partners__title {
+    padding-bottom: 30px;
+  }
+}
+.partners__list {
+  padding-bottom: 27px;
+}
+@media (min-width: 768px) {
+  .partners__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 53px;
+  }
+}
+@media (min-width: 768px) {
+  .partners__item {
+    flex-basis: calc((100% - 53px) / 2);
+  }
 }
 
+.partner {
+  flex-direction: column;
+}
+.partner__photo {
+  position: relative;
+}
+.partner__photo::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .partner__name {
   color: #333333;
   text-align: center;
@@ -201,4 +288,24 @@ body {
   margin: auto;
   display: block;
   padding-top: 20px;
+}
+
+.partner__photo--bradley::after {
+  background-color: #FF4E50;
+  background-image: url(../img/partners/bradley/icon.svg);
+}
+
+.partner__photo--heather::after {
+  background-color: #1CD7AD;
+  background-image: url(../img/partners/heather/icon.svg);
+}
+
+.partner__photo--lucas::after {
+  background-color: #FFA507;
+  background-image: url(../img/partners/lucas/icon.svg);
+}
+
+.partner__photo--anna::after {
+  background-color: #4E73DB;
+  background-image: url(../img/partners/anna/icon.svg);
 }

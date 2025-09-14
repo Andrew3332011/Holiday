@@ -1,11 +1,36 @@
 .partners {
+    padding-top: 60px;
+    padding-bottom: 56px;
+    @media (min-width:768px) {
+        padding-top: 66px;
+        padding-bottom: 39px;
+    }
 
     &__title {
         font-size: 22px;
         color: $titles-color;
         text-align: center;
-        padding-top: 60px;
+        padding-bottom: 14px;
+        @media (min-width:768px) {
+            padding-bottom: 30px;
+        }
     }
 
+    &__list {
+        padding-bottom: 27px;
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 53px;
+        }
+    }
+
+    &__item {
+        @media (min-width:768px) {
+            flex-basis: calc((100% - 53px)/2);
+        }
+        
+    }
     
 }
