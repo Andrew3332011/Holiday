@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+
+    &__container {
+        position: absolute;
+        top: 19px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 112px;
+        flex-direction: column;
+    }
+
+}

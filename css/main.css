@@ -1,0 +1,204 @@
+.hero, .autorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 940px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.header {
+  position: relative;
+}
+.header__container {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 112px;
+  flex-direction: column;
+}
+
+.autorization {
+  gap: 5px;
+}
+.autorization__link {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 26px;
+}
+.autorization__link:hover {
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  border: 2px solid #FFFFFF;
+  transition: 2s;
+}
+.autorization__link--border {
+  border: 2px solid #FFFFFF;
+}
+
+.logo {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url(../img/hero/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.hero__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.hero__text {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 19px;
+}
+
+.button {
+  background-color: #FF4E50;
+  padding: 12px 37px;
+  border-radius: 26px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  width: 280px;
+  border: 2px solid #FF4E50;
+}
+.button:hover {
+  background-color: transparent;
+  color: #FF4E50;
+  border: 2px solid #FF4E50;
+  transition: 2s;
+}
+.button--partner {
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  border: 2px solid #FF4E50;
+}
+.button--partner:hover {
+  background-color: #FF4E50;
+  color: #FFFFFF;
+}
+
+.partners__title {
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.partner__name {
+  color: #333333;
+  text-align: center;
+  padding-top: 13px;
+}
+.partner__info {
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 13px;
+}
+.partner__image {
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+}

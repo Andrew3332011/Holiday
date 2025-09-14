@@ -1,0 +1,24 @@
+.hero {
+  background-image: url(../img/hero/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  @extend %flex-center;
+
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    font-family: $second-font;
+    padding-bottom: 19px;
+  }
+
+}

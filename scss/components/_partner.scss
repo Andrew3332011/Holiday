@@ -1,0 +1,22 @@
+.partner {
+
+    &__name {
+        color: $titles-color;
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    &__info {
+        font-family: $second-font;
+        color: $text-color;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    &__image {
+        margin: auto;
+        display: block;
+        padding-top: 20px;
+    }
+}
